@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Coding Arena</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .contact-card {
+            border-radius: 15px;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(13, 110, 253, 0.15);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 10px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-card:hover i {
+            transform: scale(1.2);
+            color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0d6efd;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-down">Contact Us</h2>
+            <p class="text-center mb-5" data-aos="fade-up">We’d love to hear from you! Here’s how you can reach us.</p>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-card">
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arenacommunity63@gmail.com"
+                            target="_blank" title="Email us">
+                            <i class="bi bi-envelope"></i> Gmail
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-card">
+                        <i class="bi bi-telephone"></i>
+                        <h5 class="mt-2">Phone</h5>
+                        <p>+917070785303</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-card">
+                        <i class="bi bi-geo-alt"></i>
+                        <h5 class="mt-2">Address</h5>
+                        <p> Coding Arena, Siwan, Bihar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <h5>Follow Us</h5>
+                <a href="https://www.instagram.com/arenacommunity63?igsh=MTFjb28xY2p1Z2lxYw==&utm_source=ig_contact_invite"
+                    class="me-3"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="https://www.facebook.com/share/17JNyXFvAV/" class="me-3"><i
+                        class="bi bi-facebook fs-4"></i></a>
+                <a href="https://discord.gg/dT6AEUZqM8" target="_blank" title="Decoder">
+                    <i class="bi bi-code-slash"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+    </script>
+</body>
+
+</html>

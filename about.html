@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — QUIZZ</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .ca-accent {
+            color: #2f314f;
+        }
+
+        .ca-card {
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        .ca-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: rgba(47, 49, 79, 0.1);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            background: #2f314f;
+            color: #fff;
+            transform: scale(1.2);
+        }
+
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            transform: skewX(-25deg);
+            transition: left 0.7s;
+        }
+
+        .btn-glow:hover::after {
+            left: 125%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="mb-3">About <span class="ca-accent">QUIZZ</span></h1>
+
+                    <p class="lead">
+                        QUIZZ is a smart exam preparation platform designed for students preparing for
+                        <strong>SSC, Airforce, Navy, GD, Police</strong> and other competitive examinations.
+                        Practice subject-wise quizzes, test your speed, and improve accuracy — all in one place.
+                    </p>
+
+                    <h5 class="mt-4">Our Objective</h5>
+                    <p>
+                        Our goal is to provide <strong>simple, fast, and exam-oriented practice</strong>.
+                        With quizzes from Hindi, English, Reasoning, Maths, GK-GS, Science, Coding and
+                        Previous Year Questions, QUIZZ helps you prepare smarter every day.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="btn btn-dark btn-lg btn-glow">
+                            <i class="bi bi-play-circle me-2"></i>Start Practice
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg">
+                            <i class="bi bi-grid me-2"></i>Explore Quizzes
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT FEATURES -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2">📘</div>
+                                <strong>English & Hindi</strong>
+                                <p class="small text-muted mt-1">
+                                    Grammar, Vocabulary, Comprehension & Vyakaran practice.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2">🧠</div>
+                                <strong>Reasoning & Maths</strong>
+                                <p class="small text-muted mt-1">
+                                    Logical reasoning, arithmetic & exam-level questions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2">🌍</div>
+                                <strong>GK–GS & Science</strong>
+                                <p class="small text-muted mt-1">
+                                    History, Polity, Geography, Physics, Chemistry & Biology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2">📄</div>
+                                <strong>Previous Year Questions</strong>
+                                <p class="small text-muted mt-1">
+                                    PYQs to understand real exam patterns and difficulty.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5" data-aos="fade-up">
+
+            <!-- VISION -->
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <h5>Our Vision</h5>
+                    <p>
+                        We aim to build a reliable quiz-based learning platform where students can
+                        practice daily, analyze performance, and gain confidence for competitive exams.
+                        Upcoming features include timed tests, performance reports, rankings, and more.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <small class="text-muted">
+                        Contact:
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arenacommunity63@gmail.com"
+                            target="_blank">
+                            <i class="bi bi-envelope"></i> Email Support
+                        </a>
+                    </small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

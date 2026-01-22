@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(135deg, #0dcaf0, #0d6efd);
+    min-height: 100vh;
+}
+
+.main-box {
+    margin-top: 30px;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+input,
+textarea {
+    border-radius: 10px !important;
+}
