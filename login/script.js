@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (data.status === "success") {
                 showMessage(data.message, "success");
                 setTimeout(() => {
-        window.location.href = "/main_content/main_content.html"; 
+        window.location.href = "/Quiz/main_content/main_content.html"; 
     }, 1500);
             } else {
                 showMessage(data.message, "danger");
