@@ -123,70 +123,100 @@ button.btn:hover {
     }
 }
 
+/* ================= FOOTER ================= */
+
 .quiz-footer {
-    background: #2e2f4f;
+    background: linear-gradient(180deg, #2f314f, #1f2036);
     color: #dcdcdc;
-    margin-top: 60px;
-    font-family: 'Segoe UI', sans-serif;
+    margin-top: 80px;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 50px 20px;
-}
-
-.footer-col h3 {
+/* Logo */
+.footer-logo {
     color: #fff;
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.footer-col h4 {
-    color: #fff;
-    margin-bottom: 12px;
-}
-
-.footer-col p {
+/* Text */
+.footer-text {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #cfcfcf;
+    margin-top: 10px;
 }
 
-.footer-col ul {
+/* Titles */
+.footer-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #ffd700;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+/* Lists */
+.footer-list {
     list-style: none;
     padding: 0;
+    margin-top: 15px;
 }
 
-.footer-col ul li {
+.footer-list li {
     margin-bottom: 8px;
 }
 
-.footer-col ul li a {
+.footer-list li a {
     color: #cfcfcf;
     text-decoration: none;
     font-size: 14px;
-}
-
-.footer-col ul li a:hover {
-    color: #ffffff;
-    padding-left: 4px;
     transition: 0.3s;
 }
 
-.social a {
-    font-size: 22px;
-    margin-right: 12px;
-    color: #ffffff;
-    text-decoration: none;
+.footer-list li a:hover {
+    color: #ffd700;
+    padding-left: 6px;
 }
 
+/* Social */
+.footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+/* Bottom */
 .footer-bottom {
     text-align: center;
     padding: 15px;
-    background: #23243a;
+    background: #17182a;
     font-size: 13px;
-    color: #bbb;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ========== MOBILE FIX ========= */
+@media (max-width: 576px) {
+    .footer-social a {
+        display: block;
+        margin-bottom: 8px;
+    }
 }

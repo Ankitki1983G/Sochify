@@ -1,3 +1,5 @@
+// script.js (FINAL)
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const authToggle = document.getElementById("authToggle");
@@ -6,10 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const msgBox = document.getElementById("msgBox");
     let isSignup = false;
 
-    // Init
-    loginBox.classList.remove("d-none");
-    signupBox.classList.add("d-none");
-
+    // ================= HELPERS =================
     function showMessage(text, type) {
         msgBox.className = `alert alert-${type} text-center`;
         msgBox.innerText = text;
@@ -29,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("users", JSON.stringify(users));
     }
 
-    // Toggle
+    // ================= TOGGLE =================
     authToggle.addEventListener("click", e => {
         e.preventDefault();
         isSignup = !isSignup;
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (password.length < 6) {
-            showMessage("Password min 6 chars", "danger");
+            showMessage("Password minimum 6 characters", "danger");
             return;
         }
 
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const exists = users.find(u => u.email === email);
 
         if (exists) {
-            showMessage("Email already registered", "danger");
+            showMessage("Email already registered. Please login.", "danger");
             return;
         }
 
@@ -97,17 +96,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const user = users.find(u => u.email === email);
 
         if (!user) {
-            showMessage("❌ Account not found. Please Signup first", "danger");
+            showMessage("Account not found. Please signup first.", "danger");
             return;
         }
 
         if (user.password !== password) {
-            showMessage("❌ Incorrect password", "danger");
+            showMessage("Incorrect password", "danger");
             return;
         }
 
-        // Login success
+        // ✅ LOGIN SUCCESS
         localStorage.setItem("loggedInUser", JSON.stringify(user));
+
+        // 🔐 STRICT RULE: only login button click allows entry
+        sessionStorage.setItem("loginClicked", "true");
+
         showMessage("✅ Login successful!", "success");
 
         setTimeout(() => {

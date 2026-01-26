@@ -118,57 +118,55 @@
         </div>
     </div>
     <footer class="quiz-footer">
-        <div class="container py-5">
-            <div class="row gy-4">
+        <div class="footer-container">
 
-                <!-- Brand -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="footer-logo">Sochify</h3>
-                    <p class="footer-text">
-                        Sochify is a smart learning platform for
-                        SSC, Airforce, Navy & other competitive exams.
-                    </p>
-                </div>
+            <div class="footer-col">
+                <h3>Sochify</h3>
+                <p>
+                    Sochify is a smart learning platform for
+                    SSC, Airforce, Navy & other competitive exams.
+                </p>
+            </div>
 
-                <!-- Quick Links -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="footer-title">Quick Links</h5>
-                    <ul class="footer-list">
-                        <li><a href="/main_content/main_content.html">English Quiz</a></li>
-                        <li><a href="/main_content/main_content.html">Hindi Quiz</a></li>
-                        <li><a href="/main_content/main_content.html">Reasoning</a></li>
-                        <li><a href="/main_content/main_content.html">Previous Year</a></li>
-                    </ul>
-                </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/main_content/main_content.html">English Quiz</a></li>
+                    <li><a href="/main_content/main_content.html">Hindi Quiz</a></li>
+                    <li><a href="/main_content/main_content.html">Reasoning</a></li>
+                    <li><a href="/main_content/main_content.html">Previous Year</a></li>
+                </ul>
+            </div>
 
-                <!-- Support -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="footer-title">Support</h5>
-                    <ul class="footer-list">
-                        <li><a href="/about.html">About Us</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                    </ul>
-                </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
 
-                <!-- Social -->
-                <div class="col-12 col-lg-5">
-                    <h5 class="footer-title">Follow Us</h5>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/arenacommunity63?igsh=MTFjb28xY2p1Z2lxYw==&utm_source=ig_contact_invite"
-                            class="me-3">📸 Instagram</a>
-                        <a href="https://www.facebook.com/share/17JNyXFvAV/">🌐 Facebook</a>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com/arenacommunity63?igsh=MTFjb28xY2p1Z2lxYw==&utm_source=ig_contact_invite"
+                        class="me-3">ه 🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★</a>
+                    <div>
+                        <a href="https://www.facebook.com/share/17JNyXFvAV/" class="me-3">🌐 facebook</a>
+                    </div>
+                    <div>
                         <a href="https://discord.gg/dT6AEUZqM8" target="_blank" title="Decoder">
                             ⛓️ Discord </a>
                     </div>
                 </div>
-
             </div>
+
         </div>
 
         <div class="footer-bottom">
-            © 2026 Sochify | All Rights Reserved
+            © 2026 QuizZ | All Rights Reserved
         </div>
     </footer>
 
