@@ -1,4 +1,5 @@
 const CACHE_NAME = "sochify-v1";
+const CACHE_NAME = "sochify-v3";
 
 const urlsToCache = [
   "/",
@@ -9,7 +10,11 @@ const urlsToCache = [
   "/MATH/",
   "/Reasoning/",
   "/English/",
-  "/Hindi/"
+  "/Hindi/",
+  "/manifest.json",
+  "/icon/android-launchericon-192-192.png",
+  "/icon/android-launchericon-512-512.png"
+
 ];
 
 // Install

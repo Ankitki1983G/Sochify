@@ -89,8 +89,27 @@
                     .catch(err => console.log("SW Error:", err));
             });
         }
-    </script>
+        let deferredPrompt;
 
+        window.addEventListener("beforeinstallprompt", (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById("installBtn").style.display = "block";
+        });
+
+        document.getElementById("installBtn").addEventListener("click", () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => {
+                    deferredPrompt = null;
+                });
+            }
+        });
+
+    </script>
+    <button id="installBtn" style="display:none;">
+        Install Sochify App
+    </button>
 </body>
 
 </html>
