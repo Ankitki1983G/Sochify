@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Science Test Series</title>
+    <link rel="stylesheet" href="/science/science.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Science Test Series (Exam Mode)</h1>
+
+        <button id="darkToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+
+
+        <!-- Subject Selection -->
+        <div id="subject-box">
+            <h2>Select Subject</h2>
+            <button onclick="startTest('physics')">Physics</button>
+            <button onclick="startTest('chemistry')">Chemistry</button>
+            <button onclick="startTest('biology')">Biology</button>
+        </div>
+
+
+        <!-- Exam Area -->
+        <div id="exam-box" class="hide">
+            <div class="top-bar">
+                <span>⏱ Time: <span id="time">5:00</span></span>
+                <span>Question: <span id="qno">1</span></span>
+            </div>
+
+
+            <h2 id="question"></h2>
+            <div id="options"></div>
+
+
+            <div class="buttons">
+                <button onclick="nextQuestion()">Next</button>
+                <button onclick="submitTest()">Submit</button>
+            </div>
+        </div>
+
+
+        <!-- Result -->
+        <!-- Result -->
+        <div id="result" class="result hide">
+            <h2>Test Completed</h2>
+            <p id="scoreText"></p>
+
+            <button onclick="restartTest()">Restart Test</button>
+            <button onclick="goHome()">Change Subject</button>
+            <button onclick="showHistory()">View Previous Results</button>
+
+            <div id="history"></div>
+        </div>
+
+
+        <script src="/science/science.js"></script>
+</body>
+
+</html>
