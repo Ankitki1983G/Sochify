@@ -1,4 +1,3 @@
-const CACHE_NAME = "sochify-v1";
 const CACHE_NAME = "sochify-v3";
 
 const urlsToCache = [
