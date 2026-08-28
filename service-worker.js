@@ -1,4 +1,4 @@
-const CACHE_NAME = "sochify-v3";
+const CACHE_NAME = "sochify-v4";
 
 const urlsToCache = [
   "/",
@@ -33,3 +33,19 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(
+        keys.map(key => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
+        })
+      )
+    )
+  );
+});
+
+
